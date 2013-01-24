@@ -2,7 +2,7 @@
 Name=Deepin
 Inherits=Faenza
 Comment=Icon theme project with tilish style, by Tiheum
-Directories=emblems/16,emblems/22,emblems/24,emblems/32,emblems/48,emblems/scalable,places/16,places/22,places/24,places/32,places/48,places/128,places/scalable,devices/16,devices/48,misc/48,apps/48,apps/16
+Directories=emblems/16,emblems/22,emblems/24,emblems/32,emblems/48,emblems/scalable,places/16,places/22,places/24,places/32,places/48,places/128,places/scalable,devices/16,devices/48,misc/48,apps/48,apps/16,status/scalable
 
 [apps/48]
 Size=48
@@ -96,3 +96,10 @@ Type=fixed
 Size=48
 Context=Misc
 Type=fixed
+
+[status/scalable]
+Size=96
+Context=Status
+Type=Scalable
+MinSize=8
+MaxSize=512
