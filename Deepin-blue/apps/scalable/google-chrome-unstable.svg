@@ -1,0 +1,279 @@
+e desktop folder and the music folder. It also handles
+ localization (i.e. translation) of the filenames.
+ .
+ This extension sets the Gtk bookmark file and tracks changes of the locale
+ to notify the user on login about changed directory names.
+Homepage: http://www.freedesktop.org/wiki/Software/xdg-user-dirs
+Original-Maintainer: Sebastian Dr√∂ge <slomo@debian.org>
+
+Package: libgudev-1.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 78
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Multi-Arch: same
+Source: systemd (198-0ubuntu11.2)
+Version: 1:198-0ubuntu11.2
+Depends: libc6 (>= 2.2), libglib2.0-0 (>= 2.22.0), libudev1 (>= 183)
+Pre-Depends: multiarch-support
+Description: GObject-based wrapper library for libudev
+ This library makes it much simpler to use libudev from programs already using
+ GObject. It also makes it possible to easily use libudev from other
+ programming languages, such as Javascript, because of GObject introspection
+ support.
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Original-Maintainer: Tollef Fog Heen <tfheen@debian.org>
+
+Package: libgtksourceview-3.0-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 4632
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Multi-Arch: foreign
+Source: gtksourceview3
+Version: 3.8.1-0ubuntu1~raring1
+Description: common files for the GTK+ syntax highlighting widget
+ GtkSourceView is a text widget that extends the standard GTK+ 3.x text widget
+ GtkTextView. It improves GtkTextView by implementing syntax highlighting and
+ other features typical of a source editor.
+ .
+ This package contains the language specifications files for Ada, C, C++, C#,
+ CSS, ".desktop", ".diff" (patch), Fortran 95, GtkRC, Haskell, HTML, IDL,
+ ".ini", Java, JavaScript, LaTeX, Lua, MSIL, Nemerle, Pascal, Perl, PHP, ".po"
+ (gettext), Python, R, Ruby, sh, SQL, Tcl, Texinfo, VB.NET, Verilog, VHDL and
+ XML.
+Homepage: http://projects.gnome.org/gtksourceview/
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+
+Package: libcrack2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 144
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: cracklib2
+Version: 2.8.22-0ubuntu1
+Depends: libc6 (>= 2.4)
+Recommends: cracklib-runtime
+Description: pro-active password checker library
+ Shared library for cracklib2 which contains a C function which may be
+ used in a passwd like program. The idea is simple: try to prevent
+ users from choosing passwords that could be guessed by crack by
+ filtering them out, at source. cracklib2 is NOT a replacement passwd
+ program. cracklib2 is a LIBRARY.
+Original-Maintainer: Jan Dittberner <jandd@debian.org>
+Homepage: http://sourceforge.net/projects/cracklib
+
+Package: ssl-cert
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 101
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.0.32
+Depends: debconf (>= 0.5) | debconf-2.0, openssl (>= 0.9.8g-9), adduser
+Suggests: openssl-blacklist
+Description: simple debconf wrapper for OpenSSL
+ This package enables unattended installs of packages that
+ need to create SSL certificates.
+ .
+ It is a simple wrapper for OpenSSL's certificate request utility that
+ feeds it with the correct user variables.
+Original-Maintainer: Debian Apache Maintainers <debian-apache@lists.debian.org>
+
+Package: dpkg-dev
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 1561
+Origin: debian
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Bugs: debbugs://bugs.debian.org
+Architecture: all
+Multi-Arch: foreign
+Source: dpkg
+Version: 1.16.10ubuntu1
+Depends: libdpkg-perl (= 1.16.10ubuntu1), bzip2, xz-utils, patch, make, binutils, base-files (>= 5.0.0)
+Recommends: gcc | c-compiler, build-essential, fakeroot, gnupg, gpgv, libalgorithm-merge-perl
+Suggests: debian-keyring
+Breaks: devscripts (<< 2.10.26), dpkg-cross (<< 2.0.0)
+Conffiles:
+ /etc/dpkg/shlibs.default 1a2b9d0a869e2aa885ae3621c557fb95
+ /etc/dpkg/shlibs.override 84b1e69080569cc5c613a50887af5200
+Description: Debian package development tools
+ This package provides the development tools (including dpkg-source)
+ required to unpack, build and upload Debian source packages.
+ .
+ Most Debian source packages will require additional tools to build;
+ for example, most packages need make and the C compiler gcc.
+Homepage: http://wiki.debian.org/Teams/Dpkg
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+
+Package: dkms
+Status: install ok installed
+Priority: optional
+Section: kernel
+Installed-Size: 340
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.2.0.3-1.1ubuntu2
+Depends: module-init-tools, gcc, make | build-essential | dpkg-dev, coreutils (>= 7.4), patch
+Recommends: fakeroot, menu | sudo
+Suggests: dpkg-dev, debhelper
+Conffiles:
+ /etc/modprobe.d/dkms.conf 74452a1f23577a0bb30d764a895429d0
+ /etc/dkms/template-dkms-mkdeb/debian/postinst 205c51f28c7327c0d13f5891fac55d04
+ /etc/dkms/template-dkms-mkdeb/debian/compat 84bc3da1b3e33a18e8d5e1bdd7a18d7a
+ /etc/dkms/template-dkms-mkdeb/debian/changelog f14e36c92f14270163eb20fa883d463e
+ /etc/dkms/template-dkms-mkdeb/debian/prerm e7c0c39003edb2255d22a775efa907e5
+ /etc/dkms/template-dkms-mkdeb/debian/copyright de471e376ba2c3886424b5c4649c42d6
+ /etc/dkms/template-dkms-mkdeb/debian/rules c385ec9e8f6c6745ad9b9665c38cbd84
+ /etc/dkms/template-dkms-mkdeb/debian/control 932cd11859c7c153a8c458325e74497f
+ /etc/dkms/template-dkms-mkdeb/debian/README.Debian 6707f5716bc3a2d65fa1b05d81ba8add
+ /etc/dkms/template-dkms-mkdeb/debian/dirs ea7a90f4a1be2e0054c3d4920c29e33f
+ /etc/dkms/template-dkms-mkdeb/Makefile d97acaeba72f667d3eb69695e9018243
+ /etc/dkms/framework.conf 4e72dd99504978161b561f69256c1696
+ /etc/bash_completion.d/dkms fbb05514b62b89752809c57964679b3b
+ /etc/kernel/prerm.d/dkms 97139ec74350d65636320b76a11b1f47
+ /etc/kernel/header_postinst.d/dkms fa05cd89316f042b4ed12090e5aad896
+ /etc/kernel/postinst.d/dkms fa05cd89316f042b4ed12090e5aad896
+Description: Dynamic Kernel Module Support Framework
+ DKMS is a framework designed to allow individual kernel modules to be upgraded
+ without changing the whole kernel. It is also very easy to rebuild modules as
+ you upgrade kernels.
+Homepage: http://linux.dell.com/dkms
+Original-Maintainer: Dynamic Kernel Modules Support Team <pkg-dkms-maint@lists.alioth.debian.org>
+
+Package: intel-gpu-tools
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 610
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: i386
+Version: 1.3-0ubuntu2
+Depends: libc6 (>= 2.8), libcairo2 (>= 1.2.4), libdrm-intel1 (>= 2.4.36), libdrm2 (>= 2.4.30), libpciaccess0 (>= 0.8.0+git20071002)
+Conflicts: xserver-xorg-video-intel (<< 2.9.1)
+Description: tools for debugging the Intel graphics driver
+ intel-gpu-tools is a package of tools for debugging the Intel graphics driver,
+ including a GPU hang dumping program, performance monitor, and performance
+ microbenchmarks for regression testing the DRM.
+Homepage: http://www.intellinuxgraphics.org/
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libsamplerate0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1495
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Multi-Arch: same
+Source: libsamplerate
+Version: 0.1.8-5
+Replaces: samplerate-programs (<< 0.1.8-3)
+Depends: libc6 (>= 2.1.3)
+Pre-Depends: multiarch-support
+Description: Audio sample rate conversion library
+ libsamplerate (aka Secret Rabbit Code) is a library for audio rate conversion.
+ .
+ libsamplerate currently provides three different sample rate conversion
+ algorithms; zero order hold, linear interpolation and FIR filter interpolation
+ (using filters derived from the mathematical SINC function). The first two
+ algorithms (zero order hold and linear) are included for completeness and are
+ not recommended for any application where high.9), libdbus-1-3 (>= 1.2.16), libnih-dbus1 (>= 1.0.0), libnih1 (>= 1.0.0), libplymouth2 (>= 0.8.1-3), libudev1 (>= 183)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Breaks: initscripts (<< 2.88dsf-13.3), policycoreutils (<< 2.0.69-2ubuntu4), usplash (<< 0.5.47)
+Conffiles:
+ /etc/init/mounted-var.conf 02f90856c91a46e9cbed1c35b92fec6c
+ /etc/init/mountdevsubfs.sh.conf dd33cb414bca17d97140d7f8671207f2
+ /etc/init/mountnfs-bootclean.sh.conf 0b6f3f9e9f8757efee57f6a4839d7dff
+ /etc/init/mtab.sh.conf 27aece82dbe70232d734d1dadfe87518
+ /etc/init/bootmisc.sh.conf d1a51c54dcfe6f3f5265246888ba4161
+ /etc/init/mounted-debugfs.conf 462c8aab0d9d4e6e496b1e2be5910edc
+ /etc/init/mounted-tmp.conf 289fa57d726885147a41b2b1f3695a29
+ /etc/init/checkroot.sh.conf 3ea7f6ba450f431fd239e2b53a805216
+ /etc/init/mounted-run.conf b40dc0421f76a9a581e16d91a4ec6137
+ /etc/init/mountall.conf 4ecc1e75cf68705e15e5e3106066223a
+ /etc/init/mountall-shell.conf aa05af89db3de044d1cd7f6971b46d9f
+ /etc/init/mounted-dev.conf cf7bea42235e77168c996d774f059c44
+ /etc/init/mountkernfs.sh.conf 2e7449097b6cf88cba915edc1c339ec4
+ /etc/init/mounted-proc.conf 07198659bd06c1442a35882b2fae05fc
+ /etc/init/mountall-reboot.conf 43e3c229085a13005b0681a49b2bef51
+ /etc/init/mountall.sh.conf ee258840aad52477434cc22e34efcc50
+ /etc/init/checkroot-bootclean.sh.conf e02a473c76e4a2bfc1efb4c367495052
+ /etc/init/mountall-net.conf feff70cd7006f6763e24263d381940f3
+ /etc/init/mountall-bootclean.sh.conf d1899239aa60ea903f43a3ac58c5c238
+ /etc/init/mountnfs.sh.conf 760a5b57cbd0d1e2c65ba6db9297a586
+ /etc/init/checkfs.sh.conf 2e928476ccb2ecefe9ee87e2f83d34da
+ /etc/dbus-1/system.d/Mountall.Server.conf 91b1414af1257d2ef089f84a3e5c1ed1
+Description: filesystem mounting tool
+ mountall mounts filesystems when the underlying block devices are
+ ready, or when network interfaces come up, checking the filesystems
+ first.
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+
+Package: libkpathsea6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 251
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Source: texlive-bin
+Version: 2012.20120628-4
+Depends: libc6 (>= 2.4)
+Description: TeX Live: path search library for TeX (runtime part)
+ This package contains the runtime part of the Kpathsea[rch] library,
+ which implements generic path searching, configuration, and
+ TeX-specific file searching.
+Original-Maintainer: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
+Homepage: http://www.tug.org/texlive/
+
+Package: libpython3.3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 3684
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Multi-Arch: same
+Source: python3.3
+Version: 3.3.1-1ubuntu5.2
+Replaces: python3.3 (<< 3.0~rc1)
+Depends: libpython3.3-stdlib (= 3.3.1-1ubuntu5.2), libc6 (>= 2.16), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Pre-Depends: multiarch-support
+Description: Shared Python runtime library (version 3.3)
+ Version 3.3 of the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+Original-Maintainer: Matthias Klose <doko@debian.org>
+
+Package: kmod
+Status: install ok installed
+Priority: required
+Section: admin
+Installed-Size: 196
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Multi-Arch: foreign
+Version: 9-3ubuntu1
+Replaces: module-init-tools (<< 4)
+Depends: libc6 (>= 2.8), libkmod2 (>= 6~), upstart-job, lsb-base (>= 3.0-6)
+Breaks: module-init-tools (<< 4)
+Conffiles:
+ /etc/depmod.d/ubuntu.conf 7c8439ef36b12e5f226b5dbfa20b8c2d
+ /etc/init/kmod.conf 9e37a9d202bccd9bbcd82b43abad91b6
+ /etc/modprobe.d/blacklist-rare-network.conf 8fb4b96124e461f53adceba9ca91f09a
+ /etc/modprobe.d/iwlwifi.conf f27bc645e93e20c8e532325d190ac8ee
+ /etc/modprobe.d/mlx4.conf b2a0bedb7461daeb0138270639581bbf
+ /etc/modprobeÕ±xÆlKò¨l G\’Áÿ™6@^ò±J ~ä{jÆã´rOÃ&ﬁuæ_KÒ≠.Sñ˘/Üb”iö™>¶X.÷Aû≥í5˙*ˇüÑπÏu†b–¡Táô€Fª•PÍ[(ΩúI”0Èw?úè√ŒXrdæÒà∏®CD∫˜H◊"≠v) *{]s∆CËxhÿlî4’˘Ûˇ≠˛¿ƒzRº]û5ÍYŸ⁄ﬂÕûœÀrÎ∑ñº`ÅÂ¯%‚õ¥◊j«ZA}fcµ‰a⁄&ä◊Hß˝5˜dπîﬁ!RËAêF1ãõa∞añÂ}Ë˘üv8ü¥XÁ(Uf¯ÑÙ4•ö÷m1Í'˙KâıfÚ∫˜YÃ∫EÎ˛µX˜•¥ÓÀ'◊Ωû√ª2/À5Ñ¶Q ox-π‡Êßn<
