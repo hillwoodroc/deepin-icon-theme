@@ -1,7 +1,7 @@
 [Icon Theme]
 Name=Deepin-Blue
 Comment=Flattr is a minimalistic icon set using smooth colors, simple shapes and recognizable glyphs
-Inherits=
+Inherits=Faenza-Ambiance
 
 Example=x-directory-normal
 
