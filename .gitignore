@@ -1,3 +1,5 @@
 .gitignore
 Deepin/icon-theme.cache
 GoodIcons/icon-theme.cache
+.DS_Store
+*.~
