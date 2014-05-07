@@ -4,6 +4,7 @@
 
 import os
 import sys
+import shutil
 import ConfigParser
 
 class PngGenerate(object):
@@ -51,12 +52,13 @@ class PngGenerate(object):
 
     def _generate_png(self, image_path, icon_type):
         # Convert given image into given type_dir.
-        image_name = "%s.png" % os.path.basename(image_path)[:-4]
+        image_name = os.path.basename(image_path)[:-4]
         for size,directory in self.icon_dirs[icon_type]:
             if size == 'scalable':
-                continue
+                shutil.copy(image_path,
+                            os.path.join(self.theme, directory, image_name))
 
-            output_file = os.path.join(self.theme, directory, image_name)
+            output_file = os.path.join(self.theme, directory, "%s.png" % image_name)
             PngGenerate.svg_to_png(image_path, size, output_file)
 
 
