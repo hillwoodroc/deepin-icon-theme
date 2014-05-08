@@ -56,7 +56,8 @@ class PngGenerate(object):
         for size,directory in self.icon_dirs[icon_type]:
             if size == 'scalable':
                 shutil.copy(image_path,
-                            os.path.join(self.theme, directory, image_name))
+                            os.path.join(self.theme, directory, "%s.svg" % image_name))
+                continue
 
             output_file = os.path.join(self.theme, directory, "%s.png" % image_name)
             PngGenerate.svg_to_png(image_path, size, output_file)
@@ -84,6 +85,7 @@ class PngGenerate(object):
         if not os.path.exists(dir_name):
             os.makedirs(dir_name)
 
+        print "converting %s to %s" % (input_file, output_file)
         os.system("inkscape -f %s -w %s -e %s" % (input_file, size, output_file))
 
 
