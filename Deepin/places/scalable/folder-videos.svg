@@ -10,8 +10,22 @@
 </linearGradient>
 <path fill="url(#SVGID_1_)" d="M62.2,19.5c-2.1-4.4-4-8.6-5.2-11.2C55,4,48.1,4,48.1,4H21.5C11.6,4,4,12.1,4,22v84
 	c0,9.9,7.6,18,17.5,18h84c9.9,0,18.5-8.1,18.5-18c0,0,0-69.9,0-73.7c0-8.9-9.8-9.3-9.8-9.3H68.1C68.1,23,64.1,23.4,62.2,19.5z"/>
-<path id="video-icon_4_" fill="#D6B017" d="M39,47.4V94h49.1V47.4H39z M49.4,89.1H44v-4.6h5.4V89.1L49.4,89.1z M49.4,81.1H44v-4.6
-	h5.4V81.1L49.4,81.1z M49.4,73H44v-4.6h5.4V73L49.4,73z M49.4,65H44v-4.6h5.4V65L49.4,65z M49.4,56.9H44v-4.6h5.4V56.9L49.4,56.9z
-	 M73.3,89.1h-19V73h19V89.1z M73.3,68.4h-19V52.3h19V68.4z M83.5,89.1h-5.4v-4.6h5.4V89.1z M83.5,81.1h-5.4v-4.6h5.4V81.1z M83.5,73
-	h-5.4v-4.6h5.4V73z M83.5,65h-5.4v-4.6h5.4V65z M83.5,56.9h-5.4v-4.6h5.4V56.9z"/>
+<g>
+	<path fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" d="M85.5,89.5
+		c0,2.2-1.8,4-4,4h-36c-2.2,0-4-1.8-4-4v-40c0-2.2,1.8-4,4-4h36c2.2,0,4,1.8,4,4V89.5z"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="53.5" y1="43" x2="53.5" y2="95"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="73.5" y1="43" x2="73.5" y2="95"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="40" y1="57.5" x2="56" y2="57.5"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="72" y1="57.5" x2="88" y2="57.5"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="40" y1="69.5" x2="88" y2="69.5"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="40" y1="81.5" x2="56" y2="81.5"/>
+	
+		<line fill="none" stroke="#D6B017" stroke-width="5" stroke-linejoin="round" stroke-miterlimit="10" x1="72" y1="81.5" x2="88" y2="81.5"/>
+</g>
 </svg>
