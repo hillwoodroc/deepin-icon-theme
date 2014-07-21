@@ -5,7 +5,7 @@ Inherits=Faenza
 
 Example=x-directory-normal
 
-Directories=actions/scalable,actions/symbolic,apps/16,apps/48,apps/scalable,categories/48,devices/scalable,devices/16,devices/48,emblems/scalable,places/16,places/22,places/24,places/32,places/48,places/64,places/128,places/scalable,status/scalable,status/16,status/48,tools/inkscape
+Directories=actions/scalable,actions/symbolic,apps/16,apps/48,apps/scalable,categories/48,devices/scalable,devices/16,devices/48,emblems/scalable,places/16,places/22,places/24,places/32,places/48,places/64,places/128,places/scalable,status/scalable,status/16,status/48
 
 [actions/scalable]
 Size=96
@@ -167,9 +167,9 @@ MaxSize=96
 #Context=Status
 #Type=Scalable
 
-[tools/inkscape]
-Size=32
-Context=Actions
-Type=Scalable
-MinSize=16
-MaxSize=32
+#[tools/inkscape]
+#Size=32
+#Context=Actions
+#Type=Scalable
+#MinSize=16
+#MaxSize=32
